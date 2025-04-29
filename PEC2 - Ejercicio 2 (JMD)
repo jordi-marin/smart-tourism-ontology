@@ -17,6 +17,7 @@
         <dc:rights>© 2025 Jordi Marín</dc:rights>
         <dc:title>Smart Tourism Ontology</dc:title>
         <terms:created>2025-04-28</terms:created>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment>Author: Jordi Marín</rdfs:comment>
         <rdfs:comment>Date: 2025-04-28</rdfs:comment>
         <rdfs:comment>Title: Smart Tourism Ontology</rdfs:comment>
@@ -56,6 +57,12 @@
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
 
 
@@ -169,6 +176,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jm_bc/ontologies/2025/3/untitled-ontology-16#isNearTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -479,6 +487,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jm_bc/ontologies/2025/3/untitled-ontology-16#Restaurant"/>
         <rdfs:comment>A place providing lodging to travelers.</rdfs:comment>
         <rdfs:label>Hotel</rdfs:label>
     </owl:Class>
@@ -919,7 +928,7 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/jm_bc/ontologies/2025/3/untitled-ontology-16#ReligiousMonument">
         <rdfs:comment>A category for monuments related to religious heritage.</rdfs:comment>
-        <rdfs:label>Religious Monument</rdfs:label>
+        <rdfs:label>ReligiousMonument</rdfs:label>
     </rdf:Description>
     
 
